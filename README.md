@@ -110,4 +110,4 @@ O projeto separa domínio, aplicação, infraestrutura, contratos, endpoints e m
 - Regras: usuário autenticado, jogo existente, jogo ainda não adquirido.
 - Agregado: `UserGame`.
 
-![img](./docs/Event-Storm-FiapCloudGames.png)
+![Event Storming](./docs/Event-Storm-FiapCloudGames.png)
