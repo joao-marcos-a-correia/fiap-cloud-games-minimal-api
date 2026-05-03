@@ -11,18 +11,11 @@ API REST em .NET 8 para cadastro de usuários, autenticação JWT e biblioteca d
   - `User`: consulta jogos e gerencia sua biblioteca.
   - `Admin`: cadastra jogos e administra usuários.
 - Monolito em .NET 8 usando Minimal APIs.
-- Entity Framework Core com SQLite.
+- Entity Framework Core com PostgreSql.
 - Migration inicial incluída.
 - Middleware para tratamento de erros e logs estruturados via console logging.
 - Swagger habilitado.
 - Testes unitários com xUnit.
-
-## O que foi ignorado por ser opcional
-
-- MongoDB.
-- Dapper.
-- GraphQL.
-- Domain Storytelling.
 
 ## Como rodar
 
@@ -33,7 +26,7 @@ Pré-requisitos:
 Comandos:
 
 ```bash
-cd src/Fcg.Api
+cd src/FiapCloudGames.Api
 dotnet restore
 dotnet run
 ```
@@ -41,8 +34,8 @@ dotnet run
 A API abrirá o Swagger em:
 
 ```text
-https://localhost:5001/swagger
-http://localhost:5000/swagger
+https://localhost:64562/swagger
+http://localhost:64563/swagger
 ```
 
 Dependendo do perfil local do .NET, a porta pode mudar. Confira o terminal após executar `dotnet run`.
@@ -95,8 +88,6 @@ dotnet test
 ## Observações sobre DDD
 
 O projeto separa domínio, aplicação, infraestrutura, contratos, endpoints e middleware. As entidades `User`, `Game` e `UserGame` concentram regras essenciais de domínio.
-
-Sugestão para documentação DDD no Miro:
 
 ### Event Storming - Criação de usuários
 
